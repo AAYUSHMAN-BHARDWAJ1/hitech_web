@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HiTech Dot Com - Building a Better Working World</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Scroll to top button -->
+  <button id="scrollToTopBtn" title="Scroll to top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <div class="logo">
+          <img src="/public/pogo.png" alt="HiTech Dot Com Logo" class="logo-img" />
+        </div>
+      </div>
+
+      <div class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#industries" class="nav-link">Industries</a>
+        <a href="careers.html" class="nav-link">Current Openings</a>
+        <a href="#contact" class="nav-link">Contact Us</a>
+        <button class="btn btn-primary nav-btn" onclick="scrollToSection('contact')">
+          <i class="fas fa-map-marker-alt"></i>
+          Locate us
+        </button>
+      </div>
+
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-background">
+      <div class="hero-shape shape-1"></div>
+      <div class="hero-shape shape-2"></div>
+      <div class="hero-shape shape-3"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="badge animate-fade-in">
+          <i class="fas fa-award"></i>
+          ISO 9001:2015 Certified | Professional Consultancy & Manpower Services
+        </div>
+        <h1 class="hero-title animate-slide-up">
+          Building a Better Working World with
+          <span class="text-primary">HiTech Dot Com</span>
+        </h1>
+        <p class="hero-description animate-slide-up">
+          HITECH DOT COM is pioneer of organised consultancy in India. Our roots in management consulting enable us to bring a unique approach to services extended by us.
+        </p>
+
+        <div class="hero-buttons animate-slide-up">
+          <button class="btn btn-primary btn-large" onclick="scrollToSection('contact')">
+            <i class="fas fa-phone"></i>
+            Get in Touch
+          </button>
+          <button class="btn btn-outline btn-large" onclick="window.location.href='careers.html'">
+            <i class="fas fa-briefcase"></i>
+            Explore Careers
+          </button>
+        </div>
+
+        <!-- Stats -->
+        <div class="hero-stats animate-fade-in">
+          <div class="stat-item">
+            <div class="stat-number" data-target="1000">0</div>
+            <div class="stat-label">Clients Served</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Support</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="8">0</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <!-- Header Section -->
+      <div class="services-header">
+        <h2 class="section-main-heading">Our Services</h2>
+        <h2 class="section-title">Comprehensive Solutions for Your Business</h2>
+        <p class="section-subtitle">
+          We believe in building a seamless process to address the needs of our clients and the clients have undoubtedly given us recognition beyond our expectations consistently, delivering quality and speed.
+        </p>
+      </div>
+
+      <!-- Tabs Section -->
+      <div class="services-tabs">
+        <button class="tab-btn active" data-tab="hr"><i class="fas fa-users"></i> Human Resources</button>
+        <button class="tab-btn" data-tab="legal"><i class="fas fa-balance-scale"></i> Legal & Finance</button>
+        <button class="tab-btn" data-tab="ites"><i class="fas fa-laptop-code"></i> ITES</button>
+        <button class="tab-btn" data-tab="maintenance"><i class="fas fa-tools"></i> Maintenance</button>
+        <button class="tab-btn" data-tab="learning"><i class="fas fa-graduation-cap"></i> Learning &
+          Development</button>
+      </div>
+
+      <!-- HR Services -->
+      <div class="tab-content active" id="hr">
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Temporary Staffing</h3>
+            <p>Flexible workforce solutions for short-term projects, seasonal demands, and specialized requirements
+              across all industry verticals.</p>
+            <div class="service-features">
+              <span class="feature-tag">Flexible</span>
+              <span class="feature-tag">Scalable</span>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <h3>Recruitment & RPO</h3>
+            <p>End-to-end recruitment process outsourcing for permanent positions with comprehensive candidate screening
+              and selection.</p>
+            <div class="service-features">
+              <span class="feature-tag">End-to-End</span>
+              <span class="feature-tag">Quality Assured</span>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-calculator"></i>
+            </div>
+            <h3>Payroll Processing</h3>
+            <p>Comprehensive payroll management including salary processing, tax calculations, and statutory compliance
+              management.</p>
+            <div class="service-features">
+              <span class="feature-tag">Automated</span>
+              <span class="feature-tag">Compliant</span>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>PF, Compliance & Verification</h3>
+            <p>Complete compliance management, provident fund administration, and thorough employee verification
+              services.</p>
+            <div class="service-features">
+              <span class="feature-tag">Secure</span>
+              <span class="feature-tag">Verified</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Legal & Finance Services -->
+      <div class="tab-content" id="legal">
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Corporate Financial Consultancy</h3>
+            <p>Strategic financial planning, advisory services, and corporate restructuring for sustainable business
+              growth.</p>
+            <div class="service-features">
+              <span class="feature-tag">Strategic</span>
+              <span class="feature-tag">Growth-Focused</span>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-clipboard-check"></i>
+            </div>
+            <h3>Risk Control Matrix</h3>
+            <p>Comprehensive risk assessment, control framework development, and mitigation strategies implementation.
+            </p>
+            <div class="service-features">
+              <span class="feature-tag">Risk Management</span>
+              <span class="feature-tag">Proactive</span>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-user-check"></i>
+            </div>
+            <h3>Delegation of Authority</h3>
+            <p>Authority matrix design, approval workflow optimization, and governance framework establishment.</p>
+            <div class="service-features">
+              <span class="feature-tag">Governance</span>
+              <span class="feature-tag">Optimized</span>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <h3>Internal Audit & Listing Compliance</h3>
+            <p>Internal audit services, regulatory compliance management, and listing requirement adherence.</p>
+            <div class="service-features">
+              <span class="feature-tag">Audit Ready</span>
+              <span class="feature-tag">Compliant</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITES Services -->
+      <div class="tab-content" id="ites">
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3>Manpower Supply</h3>
+            <p>Skilled IT professionals and technical experts for your technology projects, software development, and IT
+              operations.</p>
+            <div class="service-features">
+              <span class="feature-tag">Skilled</span>
+              <span class="feature-tag">Tech-Savvy</span>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3>IT Maintenance & Support</h3>
+            <p>Comprehensive IT infrastructure maintenance, technical support services, and system optimization.</p>
+            <div class="service-features">
+              <span class="feature-tag">24/7 Support</span>
+              <span class="feature-tag">Optimized</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Maintenance Services -->
+      <div class="tab-content" id="maintenance">
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>24x7 Maintenance</h3>
+            <p>Round-the-clock maintenance services for critical systems, ensuring maximum uptime and operational
+              continuity.</p>
+            <div class="service-features">
+              <span class="feature-tag">24/7</span>
+              <span class="feature-tag">Critical Systems</span>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <h3>Downtime Reduction</h3>
+            <p>Proactive maintenance strategies and predictive analytics to minimize system downtime and optimize
+              performance.</p>
+            <div class="service-features">
+              <span class="feature-tag">Proactive</span>
+              <span class="feature-tag">Analytics</span>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-project-diagram"></i>
+            </div>
+            <h3>Project-based Solutions</h3>
+            <p>Customized project solutions for specific maintenance requirements and infrastructure upgrades.</p>
+            <div class="service-features">
+              <span class="feature-tag">Customized</span>
+              <span class="feature-tag">Scalable</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Learning & Development -->
+      <div class="tab-content" id="learning">
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>SAP Training Modules</h3>
+            <p>Comprehensive SAP training programs covering FICO, MM, SD, HCM, and other essential modules for career
+              advancement.</p>
+            <div class="service-features">
+              <span class="feature-tag">SAP Certified</span>
+              <span class="feature-tag">Comprehensive</span>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-chalkboard-teacher"></i>
+            </div>
+            <h3>Corporate Training</h3>
+            <p>Customized training programs for organizations including leadership development and technical skills
+              enhancement.</p>
+            <div class="service-features">
+              <span class="feature-tag">Leadership</span>
+              <span class="feature-tag">Skills Development</span>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Certification Programs</h3>
+            <p>Industry-recognized certifications including SAP Certified Consultant, PMP, ITIL Foundation, and Six
+              Sigma.</p>
+            <div class="service-features">
+              <span class="feature-tag">Certified</span>
+              <span class="feature-tag">Industry Standard</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popup Modal -->
+<div id="popupModal" class="popup-modal">
+  <div class="popup-content">
+    <span class="close-btn">&times;</span>
+    <div class="popup-body">
+      <h3 id="popupTitle"></h3>
+      <p id="popupDescription"></p>
+    </div>
+  </div>
+</div>
+
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-flex">
+        <div class="about-left">
+          <div class="about-badge">Established 2017</div>
+          <h2 class="section-title">Your Trusted Partner in Business Excellence</h2>
+          <p class="about-description">
+            HiTech Dot Com is an ISO 9001:2015 certified professional consultancy and manpower services company.
+            Since our establishment in 2017, we have been committed to delivering exceptional solutions across
+            diverse industry verticals with our core values of Trust, Talent, Collaboration, and Sustainability.
+          </p>
+
+          <div class="core-values">
+            <div class="value-item">
+              <i class="fas fa-handshake"></i>
+              <div>
+                <h4>Trust</h4>
+                <p>Building lasting relationships through reliability</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <i class="fas fa-star"></i>
+              <div>
+                <h4>Talent</h4>
+                <p>Connecting the right people with right opportunities</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <i class="fas fa-users"></i>
+              <div>
+                <h4>Collaboration</h4>
+                <p>Working together for mutual success</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <i class="fas fa-leaf"></i>
+              <div>
+                <h4>Sustainability</h4>
+                <p>Creating long-term value for all stakeholders</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <div class="iso-card">
+            <div class="iso-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <h3>ISO 9001:2015 Certified Excellence</h3>
+            <p>Our commitment to quality is validated by international standards. We maintain rigorous quality
+              management systems to ensure consistent delivery of exceptional services.</p>
+
+            <div class="iso-stats">
+              <div class="iso-stat">
+                <div class="iso-stat-number">Dedicated</div>
+                <div class="iso-stat-label">Compliance Teams</div>
+              </div>
+              <div class="iso-stat">
+                <div class="iso-stat-number">8+ Years</div>
+                <div class="iso-stat-label">of Excellence</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries Section -->
+  <section id="industries" class="industries">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Industries We Serve</div>
+        <h2 class="section-title">Diverse Industry Coverage</h2>
+        <p class="section-subtitle">Delivering specialized solutions across diverse industry verticals with deep domain
+          expertise and proven track record</p>
+      </div>
+
+      <div class="industries-grid">
+        <div class="industry-card">
+          <div class="industry-icon">
+            <i class="fas fa-building"></i>
+          </div>
+          <h3>KPO / ITES / BPO</h3>
+          <p>Knowledge process outsourcing, information technology enabled services, and business process solutions for
+            global clients with focus on quality and efficiency.</p>
+          <div class="industry-stats">
+            <span class="client-count">500+ Clients</span>
+            <span class="trending">Growing</span>
+          </div>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">
+            <i class="fas fa-university"></i>
+          </div>
+          <h3>Banking & NBFC</h3>
+          <p>Comprehensive financial services, regulatory compliance solutions, risk management, and specialized
+            manpower for banking and non-banking financial companies.</p>
+          <div class="industry-stats">
+            <span class="client-count">200+ Projects</span>
+            <span class="trending">Trending</span>
+          </div>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">
+            <i class="fas fa-industry"></i>
+          </div>
+          <h3>Corporates & Business Units</h3>
+          <p>Enterprise solutions for large corporations and business units across manufacturing, retail, healthcare,
+            and other industries with scalable service offerings.</p>
+          <div class="industry-stats">
+            <span class="client-count">300+ Enterprises</span>
+            <span class="trending">Expanding</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-intro">
+          <div class="contact-badge">
+            <i class="fas fa-handshake"></i>
+            Let's Connect
+          </div>
+          <h2>Ready to <span class="highlight-text">Transform</span> Your Business?</h2>
+          <p class="contact-subtitle">We think some things are better discussed over coffee. Let's talk about your goals
+            and how we can help you achieve them.</p>
+
+          <div class="contact-info-grid">
+            <div class="contact-info-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Call Us</h4>
+                <p>+91 123-456-7890</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email Us</h4>
+                <p>info@hitechdotcom.org</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Visit Us</h4>
+                <p>Kolkata City, West Bengal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <div class="form-header">
+            <h3>Start Your Journey</h3>
+            <p>Fill out the form and we'll get back to you within 24 hours</p>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" name="firstName" placeholder="First Name" required>
+              </div>
+              <div class="form-group">
+                <input type="text" name="lastName" placeholder="Last Name" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+
+            <div class="form-group">
+              <input type="text" name="company" placeholder="Company Name">
+            </div>
+
+            <div class="form-group">
+              <select name="service" required>
+                <option value="">Select Service Interest</option>
+                <option value="hr">HR Services</option>
+                <option value="legal">Legal & Finance</option>
+                <option value="ites">ITES Services</option>
+                <option value="maintenance">Maintenance & Support</option>
+                <option value="learning">Learning & Development</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <textarea name="message" rows="4" placeholder="Tell us about your project requirements..."
+                required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo">
+            <img src="/placeholder.svg?height=45&width=150&text=HiTech+Logo" alt="HiTech Dot Com Logo" class="footer-logo-img" />
+          </div>
+          <p class="footer-description">
+            Transforming businesses through innovative solutions and comprehensive manpower services.
+            Join thousands of professionals advancing their careers with HiTech Dot Com.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About HiTech</a></li>
+              <li><a href="#services">Our Services</a></li>
+              <li><a href="#industries">Industries</a></li>
+              <li><a href="careers.html">Careers</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">HR Services</a></li>
+              <li><a href="#services">Legal & Finance</a></li>
+              <li><a href="#services">ITES Solutions</a></li>
+              <li><a href="#services">Training</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Contact</h4>
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+91 123-456-7890</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>info@hitechdotcom.org</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Kolkata City, West Bengal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>&copy; 2025 HiTech Dot Com — Information Global Services. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

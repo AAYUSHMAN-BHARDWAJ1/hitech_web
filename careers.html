@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Current Openings - HiTech Dot Com</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Scroll to top button -->
+  <button id="scrollToTopBtn" title="Scroll to top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <div class="logo">
+          <img src="/public/pogo.png" alt="HiTech Dot Com Logo" class="logo-img" />
+        </div>
+      </div>
+
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#services" class="nav-link">Services</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#industries" class="nav-link">Industries</a>
+        <a href="#careers" class="nav-link active">Current Openings</a>
+        <a href="index.html#contact" class="nav-link">Contact Us</a>
+        <button class="btn btn-primary nav-btn" onclick="window.location.href='index.html#contact'">
+          <i class="fas fa-map-marker-alt"></i>
+          Locate us
+        </button>
+      </div>
+
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Career Portal Section -->
+  <section id="careers" class="career-portal">
+    <div class="container">
+      <div class="portal-header">
+        <div class="live-badge">
+          <i class="fas fa-bolt"></i>
+          Live Job Portal - Updated Every Minute
+        </div>
+        <h2 class="portal-title">
+          Find Your Perfect
+          <span class="highlight">Career Match</span>
+        </h2>
+        <p class="portal-subtitle">
+          Discover opportunities at HiTech Dot Com with real-time deadlines and smart matching technology
+        </p>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+          <div class="stat-card blue">
+            <div class="stat-number" id="totalJobs">0</div>
+            <div class="stat-label">Active Jobs</div>
+          </div>
+          <div class="stat-card orange">
+            <div class="stat-number" id="urgentJobs">0</div>
+            <div class="stat-label">Urgent Hiring</div>
+          </div>
+          <div class="stat-card green">
+            <div class="stat-number" id="trendingFields">5</div>
+            <div class="stat-label">Departments</div>
+          </div>
+          <div class="stat-card purple">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Live Updates</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Career Tabs -->
+      <div class="career-tabs">
+        <button class="career-tab-btn active" data-tab="jobs">
+          <i class="fas fa-search"></i>
+          Smart Job Search
+        </button>
+        <button class="career-tab-btn" data-tab="categories">
+          <i class="fas fa-building"></i>
+          Explore Categories
+        </button>
+      </div>
+
+      <!-- Jobs Tab -->
+      <div class="career-tab-content active" id="jobs-tab">
+        <!-- Search Section -->
+        <div class="search-card">
+          <div class="search-container">
+            <div class="search-input-wrapper">
+              <i class="fas fa-search search-icon"></i>
+              <input type="text" id="searchInput" placeholder="Search by job title, company, skills, or location..."
+                class="search-input">
+            </div>
+            <div class="filter-wrapper">
+              <select id="categoryFilter" class="filter-select">
+                <option value="all">All Departments</option>
+                <option value="SAP Consulting">SAP Consulting</option>
+                <option value="Human Resources">Human Resources</option>
+                <option value="Finance">Finance</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="Legal & Compliance">Legal & Compliance</option>
+                <option value="Sales & Marketing">Sales & Marketing</option>
+              </select>
+            </div>
+          </div>
+          <div class="search-results" id="searchResults"></div>
+        </div>
+
+        <!-- Jobs List -->
+        <div class="jobs-container" id="jobsContainer">
+          <!-- Jobs will be dynamically inserted here -->
+        </div>
+
+        <!-- No Results -->
+        <div class="no-results hidden" id="noResults">
+          <div class="no-results-content">
+            <i class="fas fa-search"></i>
+            <h3>No active jobs found matching your criteria</h3>
+            <button class="btn btn-outline" onclick="clearFilters()">Clear All Filters</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categories Tab -->
+      <div class="career-tab-content" id="categories-tab">
+        <div class="categories-grid" id="categoriesGrid">
+          <!-- Categories will be dynamically inserted here -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Modal -->
+  <div class="modal-overlay hidden" id="modalOverlay">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 id="modalTitle">Apply for Position</h2>
+        <button class="modal-close" onclick="closeModal()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-content">
+        <div class="job-summary" id="jobSummary">
+          <!-- Job summary will be inserted here -->
+        </div>
+
+        <div class="requirements-section" id="requirementsSection">
+          <!-- Requirements will be inserted here -->
+        </div>
+
+        <div class="application-form-section">
+          <h3>Submit Your Application</h3>
+          <form id="applicationForm" class="application-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" required>
+              </div>
+              <div class="form-group">
+                <label for="experience">Experience Level</label>
+                <select id="experience">
+                  <option value="">Select your experience</option>
+                  <option value="0-1">0-1 years</option>
+                  <option value="2-3">2-3 years</option>
+                  <option value="4-5">4-5 years</option>
+                  <option value="6-10">6-10 years</option>
+                  <option value="10+">10+ years</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="resume">Upload Resume/CV *</label>
+              <div class="file-upload" onclick="document.getElementById('resumeFile').click()">
+                <i class="fas fa-upload"></i>
+                <p><strong>Click to upload</strong> or drag and drop</p>
+                <p class="file-info">PDF, DOC, DOCX (Max 5MB)</p>
+                <div class="file-selected hidden" id="fileSelected">
+                  <i class="fas fa-check-circle"></i>
+                  <span id="fileName"></span>
+                </div>
+              </div>
+              <input type="file" id="resumeFile" accept=".pdf,.doc,.docx" required style="display: none;">
+            </div>
+
+            <div class="form-group">
+              <label for="coverLetter">Cover Letter (Optional)</label>
+              <textarea id="coverLetter" placeholder="Tell us why you're interested in this position..."
+                rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              Submit Application
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo">
+            <img src="/placeholder.svg?height=45&width=150&text=HiTech+Logo" alt="HiTech Dot Com Logo" class="footer-logo-img" />
+          </div>
+          <p class="footer-description">
+            Transforming businesses through innovative solutions and comprehensive manpower services.
+            Join thousands of professionals advancing their careers with HiTech Dot Com.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="index.html#about">About HiTech</a></li>
+              <li><a href="index.html#services">Our Services</a></li>
+              <li><a href="index.html#industries">Industries</a></li>
+              <li><a href="careers.html">Careers</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="index.html#services">HR Services</a></li>
+              <li><a href="index.html#services">Legal & Finance</a></li>
+              <li><a href="index.html#services">ITES Solutions</a></li>
+              <li><a href="index.html#services">Training</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Contact</h4>
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+91 123-456-7890</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>info@hitechdotcom.org</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Kolkata City, West Bengal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>&copy; 2025 HiTech Dot Com — Information Global Services. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
