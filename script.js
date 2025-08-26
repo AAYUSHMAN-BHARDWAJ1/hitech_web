@@ -7,7 +7,7 @@ const jobsData = [
     department: "SAP Consulting",
     location: "Bangalore, Karnataka",
     type: "Full-time",
-    deadline: "2025-08-15T23:59:59",
+    deadline: "2025-10-20T23:59:59",
     description:
       "Lead SAP implementation projects and provide technical expertise to clients across various modules including FICO, MM, and SD. Work with global clients on enterprise transformation initiatives.",
     requirements: [
@@ -30,7 +30,7 @@ const jobsData = [
     department: "Human Resources",
     location: "Mumbai, Maharashtra",
     type: "Full-time",
-    deadline: "2025-08-10T18:00:00",
+    deadline: "2025-10-10T18:00:00",
     description:
       "Strategic HR support for business units, talent management, and organizational development initiatives. Drive HR policies and employee engagement programs.",
     requirements: [
@@ -53,7 +53,7 @@ const jobsData = [
     department: "Finance",
     location: "Delhi, NCR",
     type: "Full-time",
-    deadline: "2025-08-20T17:30:00",
+    deadline: "2025-09-20T17:30:00",
     description:
       "Financial planning, analysis, and reporting for corporate clients with focus on business intelligence and data-driven insights.",
     requirements: [
@@ -76,7 +76,7 @@ const jobsData = [
     location: "Chennai, Tamil Nadu",
     department: "Information Technology",
     type: "Full-time",
-    deadline: "2025-08-05T20:00:00",
+    deadline: "2025-09-05T20:00:00",
     description:
       "Provide technical support for IT infrastructure, troubleshoot system issues, and maintain network operations for client environments.",
     requirements: [
@@ -122,7 +122,7 @@ const jobsData = [
     department: "Sales & Marketing",
     location: "Hyderabad, Telangana",
     type: "Full-time",
-    deadline: "2025-08-18T19:00:00",
+    deadline: "2025-10-18T19:00:00",
     description:
       "Develop and execute digital marketing campaigns, manage social media presence, and drive online engagement for our consultancy services.",
     requirements: [
