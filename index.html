@@ -27,11 +27,11 @@
 
       <div class="nav-menu" id="nav-menu">
         <a href="#home" class="nav-link">Home</a>
-        <a href="#services" class="nav-link">Services</a>
         <a href="#about" class="nav-link">About</a>
-        <a href="#industries" class="nav-link">Industries</a>
+        <a href="#services" class="nav-link">Services</a>
+        <!-- <a href="#industries" class="nav-link">Industries</a> -->
+        <a href="#contact" class="nav-link">Contact Us</a> 
         <a href="careers.html" class="nav-link">Current Openings</a>
-        <a href="#contact" class="nav-link">Contact Us</a>
         <button class="btn btn-primary nav-btn" onclick="scrollToSection('contact')">
           <i class="fas fa-map-marker-alt"></i>
           Locate us
@@ -64,7 +64,8 @@
           <span class="text-primary">HiTech Dot Com</span>
         </h1>
         <p class="hero-description animate-slide-up">
-          HITECH DOT COM is pioneer of organised consultancy in India. Our roots in management consulting enable us to bring a unique approach to services extended by us.
+          HITECH DOT COM is pioneer of organised consultancy in India. Our roots in management consulting enable us to
+          bring a unique approach to services extended by us.
         </p>
 
         <div class="hero-buttons animate-slide-up">
@@ -81,7 +82,7 @@
         <!-- Stats -->
         <div class="hero-stats animate-fade-in">
           <div class="stat-item">
-            <div class="stat-number" data-target="1000">0</div>
+            <div class="stat-number" data-target="100">0</div>
             <div class="stat-label">Clients Served</div>
           </div>
           <div class="stat-item">
@@ -89,7 +90,7 @@
             <div class="stat-label">Support</div>
           </div>
           <div class="stat-item">
-            <div class="stat-number" data-target="8">0</div>
+            <div class="stat-number" data-target="4">0</div>
             <div class="stat-label">Years Experience</div>
           </div>
         </div>
@@ -97,15 +98,77 @@
     </div>
   </section>
 
+
+<!-- About Section -->
+<section id="about" class="about">
+  <div class="container about-flex">
+    
+    <!-- Left Side (Text) -->
+    <div class="about-left">
+      <div class="services-header">
+        <h2 class="section-main-heading">About Us</h2>
+        <h2 class="section-title">When business works better, the world works better</h2>
+        <p class="about-description">
+          At Hitech, we are committed to building a better working world — with increased trust and confidence in
+          business, sustainable growth, development of talent in all its forms, and greater collaboration.
+          <br><br>
+          Hitech was established in April 2017, and has rapidly built a significant competitive presence in India. The
+          firm operates from its offices at Shillong, Kolkata and Jamshedpur and offers our clients a full range of
+          services, including financial and business advisory, tax and regulatory, and risk advisory services.
+          <br><br>
+          Our differentiation is derived from a rapid performance-based, industry-tailored and technology-enabled
+          business advisory services delivered by some of the leading talented professionals in the company.
+          <br><br>
+          <strong>We are CONNECT! CONSULT! COLLABORATE!</strong>
+        </p>
+      </div>
+    </div>
+
+    <!-- Right Side (Image) -->
+    <div class="about-right">
+      <img src="/up.avif" alt="Hitech Company" class="about-img">
+    </div>
+  </div>
+
+  <!-- FULL-WIDTH Core Values Section -->
+  <div class="core-values-wrapper">
+    <div class="core-values">
+      <div class="value-item">
+        <i class="fas fa-handshake"></i>
+        <h4>Trust</h4>
+        <p>Building lasting relationships through reliability</p>
+      </div>
+      <div class="value-item">
+        <i class="fas fa-star"></i>
+        <h4>Talent</h4>
+        <p>Connecting the right people with right opportunities</p>
+      </div>
+      <div class="value-item">
+        <i class="fas fa-users"></i>
+        <h4>Collaboration</h4>
+        <p>Working together for mutual success</p>
+      </div>
+      <div class="value-item">
+        <i class="fas fa-leaf"></i>
+        <h4>Sustainability</h4>
+        <p>Creating long-term value for all stakeholders</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
   <!-- Services Section -->
   <section id="services" class="services">
     <div class="container">
       <!-- Header Section -->
       <div class="services-header">
         <h2 class="section-main-heading">Our Services</h2>
-        <h2 class="section-title">Comprehensive Solutions for Your Business</h2>
+        <h2 class="section-title">Exceeding Expectations Every Time</h2>
         <p class="section-subtitle">
-          We believe in building a seamless process to address the needs of our clients and the clients have undoubtedly given us recognition beyond our expectations consistently, delivering quality and speed.
+          We believe in building a seamless process to address the needs of our clients and the clients have undoubtedly
+          given us recognition beyond our expectations consistently, delivering quality and speed.
         </p>
       </div>
 
@@ -122,7 +185,7 @@
       <!-- HR Services -->
       <div class="tab-content active" id="hr">
         <div class="services-grid">
-          <div class="service-card">
+          <div class="service-card" data-service="temporary-staffing">
             <div class="service-icon">
               <i class="fas fa-users"></i>
             </div>
@@ -134,7 +197,7 @@
               <span class="feature-tag">Scalable</span>
             </div>
           </div>
-          <div class="service-card">
+          <div class="service-card" data-service="recruitment-rpo">
             <div class="service-icon">
               <i class="fas fa-user-tie"></i>
             </div>
@@ -146,7 +209,7 @@
               <span class="feature-tag">Quality Assured</span>
             </div>
           </div>
-          <div class="service-card">
+          <div class="service-card" data-service="payroll-processing">
             <div class="service-icon">
               <i class="fas fa-calculator"></i>
             </div>
@@ -158,7 +221,7 @@
               <span class="feature-tag">Compliant</span>
             </div>
           </div>
-          <div class="service-card">
+          <div class="service-card" data-service="pf-compliance">
             <div class="service-icon">
               <i class="fas fa-shield-alt"></i>
             </div>
@@ -176,7 +239,7 @@
       <!-- Legal & Finance Services -->
       <div class="tab-content" id="legal">
         <div class="services-grid">
-          <div class="service-card">
+          <div class="service-card" data-service="financial-consultancy">
             <div class="service-icon">
               <i class="fas fa-chart-line"></i>
             </div>
@@ -188,7 +251,7 @@
               <span class="feature-tag">Growth-Focused</span>
             </div>
           </div>
-          <div class="service-card">
+          <div class="service-card" data-service="risk-control">
             <div class="service-icon">
               <i class="fas fa-clipboard-check"></i>
             </div>
@@ -200,7 +263,7 @@
               <span class="feature-tag">Proactive</span>
             </div>
           </div>
-          <div class="service-card">
+          <div class="service-card" data-service="delegation-authority">
             <div class="service-icon">
               <i class="fas fa-user-check"></i>
             </div>
@@ -211,7 +274,7 @@
               <span class="feature-tag">Optimized</span>
             </div>
           </div>
-          <div class="service-card">
+          <div class="service-card" data-service="internal-audit">
             <div class="service-icon">
               <i class="fas fa-award"></i>
             </div>
@@ -228,7 +291,7 @@
       <!-- ITES Services -->
       <div class="tab-content" id="ites">
         <div class="services-grid">
-          <div class="service-card">
+          <div class="service-card" data-service="manpower-supply">
             <div class="service-icon">
               <i class="fas fa-laptop-code"></i>
             </div>
@@ -240,7 +303,7 @@
               <span class="feature-tag">Tech-Savvy</span>
             </div>
           </div>
-          <div class="service-card">
+          <div class="service-card" data-service="it-maintenance">
             <div class="service-icon">
               <i class="fas fa-tools"></i>
             </div>
@@ -257,7 +320,7 @@
       <!-- Maintenance Services -->
       <div class="tab-content" id="maintenance">
         <div class="services-grid">
-          <div class="service-card">
+          <div class="service-card" data-service="24x7-maintenance">
             <div class="service-icon">
               <i class="fas fa-clock"></i>
             </div>
@@ -269,7 +332,7 @@
               <span class="feature-tag">Critical Systems</span>
             </div>
           </div>
-          <div class="service-card">
+          <div class="service-card" data-service="downtime-reduction">
             <div class="service-icon">
               <i class="fas fa-chart-bar"></i>
             </div>
@@ -281,7 +344,7 @@
               <span class="feature-tag">Analytics</span>
             </div>
           </div>
-          <div class="service-card">
+          <div class="service-card" data-service="project-solutions">
             <div class="service-icon">
               <i class="fas fa-project-diagram"></i>
             </div>
@@ -298,7 +361,7 @@
       <!-- Learning & Development -->
       <div class="tab-content" id="learning">
         <div class="services-grid">
-          <div class="service-card">
+          <div class="service-card" data-service="sap-training">
             <div class="service-icon">
               <i class="fas fa-graduation-cap"></i>
             </div>
@@ -310,7 +373,7 @@
               <span class="feature-tag">Comprehensive</span>
             </div>
           </div>
-          <div class="service-card">
+          <div class="service-card" data-service="corporate-training">
             <div class="service-icon">
               <i class="fas fa-chalkboard-teacher"></i>
             </div>
@@ -322,7 +385,7 @@
               <span class="feature-tag">Skills Development</span>
             </div>
           </div>
-          <div class="service-card">
+          <div class="service-card" data-service="certification-programs">
             <div class="service-icon">
               <i class="fas fa-certificate"></i>
             </div>
@@ -339,90 +402,81 @@
     </div>
   </section>
 
-  <!-- Popup Modal -->
-<div id="popupModal" class="popup-modal">
-  <div class="popup-content">
-    <span class="close-btn">&times;</span>
-    <div class="popup-body">
-      <h3 id="popupTitle"></h3>
-      <p id="popupDescription"></p>
-    </div>
-  </div>
-</div>
+  <!-- Enhanced Popup Modal -->
+  <div id="serviceModal" class="service-modal">
+    <div class="service-modal-content">
+      <div class="service-modal-header">
+        <div class="service-modal-icon">
+          <i id="modalServiceIcon" class="fas fa-users"></i>
+        </div>
+        <div class="service-modal-title-section">
+          <h2 id="modalServiceTitle">Service Title</h2>
+          <div class="service-modal-category" id="modalServiceCategory">Category</div>
+        </div>
+        <button class="service-modal-close" id="closeServiceModal">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
 
+      <div class="service-modal-body">
+        <div class="service-overview">
+          <h3>Service Overview</h3>
+          <p id="modalServiceOverview">Detailed service description will appear here.</p>
+        </div>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <div class="about-flex">
-        <div class="about-left">
-          <div class="about-badge">Established 2017</div>
-          <h2 class="section-title">Your Trusted Partner in Business Excellence</h2>
-          <p class="about-description">
-            HiTech Dot Com is an ISO 9001:2015 certified professional consultancy and manpower services company.
-            Since our establishment in 2017, we have been committed to delivering exceptional solutions across
-            diverse industry verticals with our core values of Trust, Talent, Collaboration, and Sustainability.
-          </p>
+        <div class="service-details-grid">
+          <div class="service-benefits">
+            <h3><i class="fas fa-check-circle"></i> Key Benefits</h3>
+            <ul id="modalServiceBenefits">
+              <!-- Benefits will be populated dynamically -->
+            </ul>
+          </div>
 
-          <div class="core-values">
-            <div class="value-item">
-              <i class="fas fa-handshake"></i>
-              <div>
-                <h4>Trust</h4>
-                <p>Building lasting relationships through reliability</p>
-              </div>
-            </div>
-            <div class="value-item">
-              <i class="fas fa-star"></i>
-              <div>
-                <h4>Talent</h4>
-                <p>Connecting the right people with right opportunities</p>
-              </div>
-            </div>
-            <div class="value-item">
-              <i class="fas fa-users"></i>
-              <div>
-                <h4>Collaboration</h4>
-                <p>Working together for mutual success</p>
-              </div>
-            </div>
-            <div class="value-item">
-              <i class="fas fa-leaf"></i>
-              <div>
-                <h4>Sustainability</h4>
-                <p>Creating long-term value for all stakeholders</p>
-              </div>
-            </div>
+          <div class="service-features-detailed">
+            <h3><i class="fas fa-star"></i> Features</h3>
+            <ul id="modalServiceFeatures">
+              <!-- Features will be populated dynamically -->
+            </ul>
           </div>
         </div>
 
-        <div class="about-right">
-          <div class="iso-card">
-            <div class="iso-icon">
-              <i class="fas fa-award"></i>
-            </div>
-            <h3>ISO 9001:2015 Certified Excellence</h3>
-            <p>Our commitment to quality is validated by international standards. We maintain rigorous quality
-              management systems to ensure consistent delivery of exceptional services.</p>
+        <div class="service-process">
+          <h3><i class="fas fa-cogs"></i> Our Process</h3>
+          <div class="process-steps" id="modalServiceProcess">
+            <!-- Process steps will be populated dynamically -->
+          </div>
+        </div>
 
-            <div class="iso-stats">
-              <div class="iso-stat">
-                <div class="iso-stat-number">Dedicated</div>
-                <div class="iso-stat-label">Compliance Teams</div>
-              </div>
-              <div class="iso-stat">
-                <div class="iso-stat-number">8+ Years</div>
-                <div class="iso-stat-label">of Excellence</div>
-              </div>
+        <div class="service-industries">
+          <h3><i class="fas fa-building"></i> Industries We Serve</h3>
+          <div class="industries-tags" id="modalServiceIndustries">
+            <!-- Industries will be populated dynamically -->
+          </div>
+        </div>
+
+        <div class="service-cta">
+          <div class="cta-content">
+            <h3>Ready to Get Started?</h3>
+            <p>Contact our experts to discuss how this service can benefit your organization.</p>
+            <div class="cta-buttons">
+              <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                <i class="fas fa-phone"></i>
+                Contact Us
+              </button>
+              <button class="btn btn-outline" onclick="window.location.href='careers.html'">
+                <i class="fas fa-briefcase"></i>
+                View Careers
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+
 
   <!-- Industries Section -->
-  <section id="industries" class="industries">
+  <!-- <section id="industries" class="industries">
     <div class="container">
       <div class="section-header">
         <div class="section-badge">Industries We Serve</div>
@@ -470,185 +524,142 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <!-- Contact Section -->
-  <section class="contact-section" id="contact">
-    <div class="container">
-      <div class="contact-wrapper">
-        <div class="contact-intro">
-          <div class="contact-badge">
-            <i class="fas fa-handshake"></i>
-            Let's Connect
-          </div>
-          <h2>Ready to <span class="highlight-text">Transform</span> Your Business?</h2>
-          <p class="contact-subtitle">We think some things are better discussed over coffee. Let's talk about your goals
-            and how we can help you achieve them.</p>
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="contact-overlay"></div> <!-- Optional gradient overlay -->
+  <div class="container contact-flex">
+    
+    <!-- Left Side Info -->
+    <div class="contact-left">
+      <button class="contact-btn">Let's Connect</button>
+      <h2>Ready to <span class="highlight">Transform</span> Your Business?</h2>
+      <p>
+        We think some things are better discussed over coffee. Let's talk about your goals 
+        and how we can help you achieve them.
+      </p>
 
-          <div class="contact-info-grid">
-            <div class="contact-info-item">
-              <div class="contact-icon">
-                <i class="fas fa-phone"></i>
-              </div>
-              <div class="contact-details">
-                <h4>Call Us</h4>
-                <p>+91 123-456-7890</p>
-              </div>
-            </div>
-
-            <div class="contact-info-item">
-              <div class="contact-icon">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div class="contact-details">
-                <h4>Email Us</h4>
-                <p>info@hitechdotcom.org</p>
-              </div>
-            </div>
-
-            <div class="contact-info-item">
-              <div class="contact-icon">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div class="contact-details">
-                <h4>Visit Us</h4>
-                <p>Kolkata City, West Bengal</p>
-              </div>
-            </div>
+      <div class="contact-info">
+        <div class="info-item">
+          <i class="fas fa-phone"></i>
+          <div>
+            <h4>Call Us</h4>
+            <p>+91 123-456-7890</p>
           </div>
         </div>
-
-        <div class="contact-form-container">
-          <div class="form-header">
-            <h3>Start Your Journey</h3>
-            <p>Fill out the form and we'll get back to you within 24 hours</p>
-          </div>
-
-          <form class="contact-form" id="contactForm">
-            <div class="form-row">
-              <div class="form-group">
-                <input type="text" name="firstName" placeholder="First Name" required>
-              </div>
-              <div class="form-group">
-                <input type="text" name="lastName" placeholder="Last Name" required>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <input type="email" name="email" placeholder="Email Address" required>
-            </div>
-
-            <div class="form-group">
-              <input type="text" name="company" placeholder="Company Name">
-            </div>
-
-            <div class="form-group">
-              <select name="service" required>
-                <option value="">Select Service Interest</option>
-                <option value="hr">HR Services</option>
-                <option value="legal">Legal & Finance</option>
-                <option value="ites">ITES Services</option>
-                <option value="maintenance">Maintenance & Support</option>
-                <option value="learning">Learning & Development</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <textarea name="message" rows="4" placeholder="Tell us about your project requirements..."
-                required></textarea>
-            </div>
-
-            <button type="submit" class="submit-btn">
-              <i class="fas fa-paper-plane"></i>
-              Send Message
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <div class="logo">
-            <img src="/placeholder.svg?height=45&width=150&text=HiTech+Logo" alt="HiTech Dot Com Logo" class="footer-logo-img" />
-          </div>
-          <p class="footer-description">
-            Transforming businesses through innovative solutions and comprehensive manpower services.
-            Join thousands of professionals advancing their careers with HiTech Dot Com.
-          </p>
-          <div class="social-links">
-            <a href="#" class="social-link">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="#" class="social-link">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" class="social-link">
-              <i class="fab fa-facebook"></i>
-            </a>
-            <a href="#" class="social-link">
-              <i class="fab fa-instagram"></i>
-            </a>
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h4>Email Us</h4>
+            <p>info@hitechdotcom.org</p>
           </div>
         </div>
-
-        <div class="footer-links">
-          <div class="footer-column">
-            <h4>Company</h4>
-            <ul>
-              <li><a href="#about">About HiTech</a></li>
-              <li><a href="#services">Our Services</a></li>
-              <li><a href="#industries">Industries</a></li>
-              <li><a href="careers.html">Careers</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-column">
-            <h4>Services</h4>
-            <ul>
-              <li><a href="#services">HR Services</a></li>
-              <li><a href="#services">Legal & Finance</a></li>
-              <li><a href="#services">ITES Solutions</a></li>
-              <li><a href="#services">Training</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-column">
-            <h4>Contact</h4>
-            <div class="contact-info">
-              <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <span>+91 123-456-7890</span>
-              </div>
-              <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <span>info@hitechdotcom.org</span>
-              </div>
-              <div class="contact-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>Kolkata City, West Bengal</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="footer-bottom-content">
-          <p>&copy; 2025 HiTech Dot Com — Information Global Services. All rights reserved.</p>
-          <div class="footer-bottom-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h4>Visit Us</h4>
+            <p>Jamshedpur, Jharkhand</p>
           </div>
         </div>
       </div>
     </div>
-  </footer>
+
+    <!-- Right Side Form -->
+    <div class="contact-right">
+      <form class="contact-form">
+        <h3>Start Your Journey</h3>
+        <p>Fill out the form and we'll get back to you within 24 hours</p>
+        <div class="form-group">
+          <input type="text" placeholder="First Name">
+          <input type="text" placeholder="Last Name">
+        </div>
+        <input type="email" placeholder="Email Address">
+        <input type="text" placeholder="Company Name (Optional)">
+        <select>
+          <option>Select Service Interest</option>
+          <option>Human Resource</option>
+          <option>ITES</option>
+          <option>Legal & Finance</option>
+          <option>Others</option>
+        </select>
+        <textarea placeholder="Tell us about your project requirements..."></textarea>
+        <button type="submit" class="send-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      
+      <!-- Brand Section -->
+      <div class="footer-brand">
+        <div class="logo-text">HiTech <span>Dot Com</span></div>
+        <p class="footer-description">
+          At HiTech Dot Com, we are committed to delivering excellence in every project. 
+          From manpower solutions to IT-enabled services, we strive to create sustainable growth, 
+          empower businesses, and connect the right talent with the right opportunities. 
+          Together, we are shaping the future of work with trust, innovation, and collaboration.
+        </p>
+      </div>
+
+      <!-- Links -->
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About HiTech</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="careers.html">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">HR Services</a></li>
+            <li><a href="#services">Legal & Finance</a></li>
+            <li><a href="#services">ITES Solutions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+91 123-456-7890</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>info@hitechdotcom.org</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Jamshedpur, Jharkhand</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <p>&copy; 2025 HiTech Dot Com — Information Global Services. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
 
   <script src="script.js"></script>
 </body>
